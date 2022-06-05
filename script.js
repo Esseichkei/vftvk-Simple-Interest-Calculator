@@ -1,8 +1,8 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
-    if (principal < 0) {//invalid principal amount
-        alert("Enter a positive number."); //this halts code execution until user hits "OK"
+    if (principal <= 0) {//invalid principal amount
+        alert("Enter a number greater than zero."); //this halts code execution until user hits "OK"
         document.getElementById("principal").focus();
     }
     else {
